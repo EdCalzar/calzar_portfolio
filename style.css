@@ -1,0 +1,187 @@
+section [class^="container"] {
+    padding: 4rem 2rem;
+}
+
+@media screen and (min-width:1024px) {
+    section [class^="container"] {
+        padding: 4rem;
+    }
+}
+
+section:not(:first-of-type) {
+    text-align: center;
+}
+
+section:nth-child(2n) {
+    background-color: #d0defd;
+}
+
+section .card, .btn-outline-dark {
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+}
+
+.btn-outline-dark:hover {
+    box-shadow: 4px 4px #d4c4ad;
+}
+
+section .card {
+    max-width: 22rem;
+    margin-inline: auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d4c4ad;
+}
+
+.submit {
+    margin-top: 25px;
+}
+
+/* PROFILE */
+
+.profilepic {
+    border: solid 3px white;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 576px) {
+    .profilepic {
+        border: solid 3px white;
+        border-radius: 50%;
+        margin-top: 50px;
+    }
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d4c4ad;
+}
+
+@media screen and (min-width:1024px) {
+    .navbar-nav .nav-item {
+        padding: 0 1rem;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+/* PROFILE */
+
+section.profile {
+    background-color: #d0defd;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+section.profile p {
+    font-size: large;
+}
+
+@media screen and (max-width: 576px) {
+    section.profile {
+        text-align: center;
+    }
+    section.profile img {
+        width: 70%;
+    }
+}
+
+/* ABOUT */
+
+section.about p {
+    font-size: large;
+}
+
+@media screen and (min-width:1024px) {
+    section.about .container, 
+    section.testimonials .container  {
+        width: 60%;
+    }
+}
+
+.description {
+    margin-top: 40px;
+}
+
+/* SKILLS */
+
+section.skills .icons {
+    font-size: 2rem;
+    margin: 1rem auto 0;
+}
+
+section.skills .card {
+    max-width: 75%;
+    margin-top: 25px;
+}
+
+section.skills .card-title {
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 576px) {
+    section.skills .card {
+        max-width: 75%;
+        margin-top: 25px;
+    }
+}
+
+.progress {
+    margin-bottom: 10px;
+}
+
+/* PROJECTS */
+
+section.projects .card {
+    max-width: 17rem;
+    text-align: left;
+}
+
+/* CONTACTS */
+
+section.contact .social-media a{
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+}
+
+/* TESTIMONIALS */
+
+section.testimonials .carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+section.testimonials .carousel-item p {
+    max-width: 100%;
+}
+
+section.testimonials .carousel-item p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOOTER */
+
+footer {
+    color: white;
+}
